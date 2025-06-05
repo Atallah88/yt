@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MD Store - Shoes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .nav-btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #6c757d; /* رمادي */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            margin: 10px auto 30px;
+        }
+        .nav-btn:hover {
+            background-color: #5a6268; /* رمادي غامق */
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            width: 300px;
+            padding: 15px;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h3 {
+            margin: 10px 0 5px;
+            color: #222;
+        }
+        .options {
+            margin-top: 10px;
+        }
+        .options input[type="text"] {
+            width: 40px;
+            margin-left: 10px;
+        }
+        .submit-btn {
+            display: block;
+            margin: 30px auto;
+            padding: 10px 30px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-btn:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+
+<!-- زر الانتقال إلى صفحة الهوديات -->
+<div style="text-align: center;">
+    <a href="hoodies.html" class="nav-btn">اذهب إلى صفحة الهوديات</a>
+</div>
+
+<h2>Choose Your Shoes</h2>
+
+<form action="cart">
+  <div class="container">
+
+    <!-- Black Sneakers -->
+    <div class="card">
+      <img src="black_sneakers.jpg" alt="Black Sneakers">
+      <h3><input type="checkbox" name="ch" value="Black Sneakers"> Black Sneakers</h3>
+      <div class="options">
+        <input type="radio" name="size1" value="small"> Small
+        <input type="text" name="q1"><br>
+        <input type="radio" name="size1" value="medium"> Medium
+        <input type="text" name="q2"><br>
+        <input type="radio" name="size1" value="large"> Large
+        <input type="text" name="q3">
+        <p><strong>Price: 25 KD</strong></p>
+      </div>
+    </div>
+
+    <!-- White Sneakers -->
+    <div class="card">
+      <img src="white_sneakers.jpg" alt="White Sneakers">
+      <h3><input type="checkbox" name="ch" value="White Sneakers"> White Sneakers</h3>
+      <div class="options">
+        <input type="radio" name="size2" value="small"> Small
+        <input type="text" name="q4"><br>
+        <input type="radio" name="size2" value="medium"> Medium
+        <input type="text" name="q5"><br>
+        <input type="radio" name="size2" value="large"> Large
+        <input type="text" name="q6">
+        <p><strong>Price: 30 KD</strong></p>
+      </div>
+    </div>
+
+    <!-- Red Sneakers -->
+    <div class="card">
+      <img src="red_sneakers.jpg" alt="Red Sneakers">
+      <h3><input type="checkbox" name="ch" value="Red Sneakers"> Red Sneakers</h3>
+      <div class="options">
+        <input type="radio" name="size3" value="small"> Small
+        <input type="text" name="q7"><br>
+        <input type="radio" name="size3" value="medium"> Medium
+        <input type="text" name="q8"><br>
+        <input type="radio" name="size3" value="large"> Large
+        <input type="text" name="q9">
+        <p><strong>Price: 28 KD</strong></p>
+      </div>
+    </div>
+
+  </div>
+
+  <input type="submit" value="Add to Cart" class="submit-btn">
+</form>
+
+</body>
+</html>
